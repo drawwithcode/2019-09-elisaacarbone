@@ -24,7 +24,7 @@ function draw() {
   //draw the circles and define what will happen when circles.dead is true
   for (var i = 0; i < circles.length; i++) {
     circles[i].display();
-    
+
     if (circles[i].dead()) {
       circles.splice(i,1);
       score++;
@@ -32,7 +32,7 @@ function draw() {
   }
 
 //create the instructions for the user, that will disappear once the user understands how to play
-  if (score <= 2) {
+  if (score <= 5) {
     textSize(12);
     textAlign(CENTER, CENTER);
     fill("#F1E9DA");
